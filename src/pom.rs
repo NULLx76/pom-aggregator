@@ -4,7 +4,7 @@ use serde::Deserialize;
 pub struct Pom {
     pub repositories: Option<Repositories>,
     #[serde(rename = "distributionManagement")]
-    pub distribution_management: Option<Repositories>
+    pub distribution_management: Option<Repositories>,
 }
 
 #[derive(Debug, Deserialize, PartialEq)]
@@ -18,4 +18,3 @@ pub struct Repository {
     pub id: String,
     pub url: String,
 }
-
