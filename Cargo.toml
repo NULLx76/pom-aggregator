@@ -11,3 +11,6 @@ serde-xml-rs = "0.6.0"
 rayon = "1.8"
 dashmap = { version = "5", features = ["rayon", "serde", "inline"] }
 clap = { version = "4", features = ["derive"] }
+
+[profile.release]
+lto = "thin"
